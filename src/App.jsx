@@ -16,19 +16,20 @@
 //
 // export default App;ç
 
-import FixedHeightList from "./Components/TanStack/FixedHeightList.jsx";
-import VariableHeightList from "./Components/TanStack/VariableHeightList.jsx";
+import FixedReactWindowList from "./Components/Windows/FixedReactWindowList.jsx";
+import VariableReactWindowList from "./Components/Windows/VariableReactWindowList.jsx";
+
 function App() {
     return (
-        <div style={{ padding: "20px" }}>
-            <h1>TanStack Virtual Demo</h1>
+        <main style={{ padding: "20px" }}>
+            <h1>Virtualización con react-window</h1>
 
-            <FixedHeightList />
+            <FixedReactWindowList />
 
-            <br />
+            <hr style={{ margin: "40px 0" }} />
 
-            <VariableHeightList />
-        </div>
+            <VariableReactWindowList />
+        </main>
     );
 }
 
